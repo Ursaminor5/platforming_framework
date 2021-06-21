@@ -8,7 +8,7 @@ platforms =  pygame.sprite.Group()
 players = pygame.sprite.Group()
 goals = pygame.sprite.Group()
 
-class entity(pygame.sprite.Sprite):
+class Entity(pygame.sprite.Sprite):
 
     #constructor: if a default position is supplied, entity will be placed there. else, it will be placed at 0,0
     def __init__(self, sprite, x , y):
@@ -52,7 +52,7 @@ class entity(pygame.sprite.Sprite):
         window.blit(self.sprite, (self.hitbox.x,self.hitbox.y))
 
 
-class player(entity):
+class Player(Entity):
     __type__ = "player"
 
     isJumping = False
@@ -112,7 +112,7 @@ class player(entity):
             self.isJumping = True
     
 
-class platform(entity):
+class Platform(Entity):
 
     __type__ = "platform"
 
@@ -137,7 +137,7 @@ class platform(entity):
         super().refresh()
 
 
-class goal(entity):
+class Goal(Entity):
 
     __type__ = "goal"
 

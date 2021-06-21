@@ -22,9 +22,9 @@ pygame.display.set_caption(CAPTION)
 background = pygame.transform.scale(pygame.image.load("resources/images/bg.png"), (WIDTH, HEIGHT))
 
 #entities
-test_player = platforming_framework.player(pygame.image.load("resources/images/sprite.png"), 0, HEIGHT)
-test_platform = platforming_framework.platform(pygame.Color(255,255,0), 500, 500, 200, 20)
-test_goal = platforming_framework.goal(pygame.Color(255, 20, 147), 650, 350, 20, 20)
+test_player = platforming_framework.Player(pygame.image.load("resources/images/sprite.png"), 0, HEIGHT)
+test_platform = platforming_framework.Platform(pygame.Color(255,255,0), 500, 500, 200, 20)
+test_goal = platforming_framework.Goal(pygame.Color(255, 20, 147), 650, 350, 20, 20)
 
 def main():
     #runtime settings

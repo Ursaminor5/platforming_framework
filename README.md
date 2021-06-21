@@ -8,9 +8,9 @@
 
 <h2>Classes and Functions</h2>
   <div id = "game objects">
-    <p><a href="#player_explanation">player</a></p>
-    <p><a href="#platform_explanation">platform</a></p>
-    <p><a href="#goal_explanation">goal</a></p>
+    <p><a href="#player_explanation">Player</a></p>
+    <p><a href="#platform_explanation">Platform</a></p>
+    <p><a href="#goal_explanation">Goal</a></p>
   </div>
   
   <br>
@@ -18,7 +18,7 @@
   
   <div id = "player_explanation">
     <h3>Player</h3>
-    <p>player = platforming_framework.player(sprite, x, y): creates a new player sprite</p>
+    <p>player = platforming_framework.Player(sprite, x, y): creates a new player sprite</p>
     <p>player.go(x, y): moves the player in the x & y direction by the specified amounts</p>
     <p>player.jump(): makes the player jump</p>
     <p>player.refresh(): should be called every frame, handles rendering, movement, jumping, and gravity</p>
@@ -29,7 +29,7 @@
   
    <div id = "platform_explanation">
       <h3>Platform</h3>
-    <p>platform = platforming_framework.platform(color, x, y, w, h): creates a new platform sprite</p>
+    <p>platform = platforming_framework.Platform(color, x, y, w, h): creates a new platform sprite</p>
     <p>platform.go(x, y): moves the platform in the x & y direction by the specified amounts</p>
     <p>platform.refresh(): should be called every frame, handles rendering, movement, and gravity</p>
    </div>
@@ -39,6 +39,6 @@
 
    <div id = "goal_explanation">
     <h3>Goal</h3>
-    <p>goal = platforming_framework.goal(color, x, y, w, h): creates a new platform sprite</p>
+    <p>goal = platforming_framework.Goal(color, x, y, w, h): creates a new platform sprite</p>
     <p>goal.refresh(): should be called every frame, handles rendering, movement, and gravity</p>
    </div>
